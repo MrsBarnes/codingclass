@@ -1161,23 +1161,397 @@
 //}
 // 
 //player변수가 0:A / 1:B
+//#include <stdio.h>
+//int main() {
+//	int number = 0, total = 0, player = 0;
+//	printf("1~3 중 숫자 하나를 입력하세요\n");
+//	while (1)
+//	{
+//		//if (player == 0) {
+//		//	printf("%c : ",'A'+0);
+//		//}
+//		//else {
+//		//	printf("%c : ",'A'+1);
+//		//}
+//
+//		printf("%c : ", 'A' + player);
+//		scanf("%d", &number);
+//
+//		if (number >3 || number <1) {
+//			printf("1~3 사이의 숫자를 입력해주세요\n");
+//			continue;
+//		}
+//
+//		total += number;
+//
+//		
+//		printf("=> %d\n", total);
+//
+//		if (total >= 31) {
+//			break;
+//		}
+//
+//		//if (player == 0)
+//		//	player = 1;
+//		//else
+//		//	player = 0;
+//
+//		player = !player;
+//	}
+//
+//
+//	//if (player == 0) { printf("A가 졌습니다!"); }
+//	//else { printf("B가 졌습니다!"); }
+//
+//	printf("%c가 졌습니다!", 'A' + player);
+//
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main() {
+//	int tem = 20;
+//	do
+//	{
+//		printf("현재 온도 : %d도\n", tem);
+//	} while (tem > 28);
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main() {
+//	int input;
+//	enum {GAMEOVER, NEWGAME, LOADGAME, OPTION};
+//	do {
+//		printf("\n메뉴를 선택하세요. \n");
+//		printf("1.새 게임 2. 이어하기 3.옵션 (0: 게임 종료)\n");
+//		scanf("%d", &input);
+//
+//		switch (input) {
+//		case NEWGAME:
+//			printf("새 게임 시작\n");
+//			break;
+//		case LOADGAME:
+//			printf("세이브 데이터 로드\n");
+//			break;
+//		case OPTION:
+//			printf("옵션 세팅\n");
+//			break;
+//		}
+//	} while (input != GAMEOVER);
+//
+//		printf("게임을 종료합니다. \n");
+//		return 0;
+//}
+
+//#include <stdio.h>
+//int main() {
+//	int select;
+//	do {
+//		printf("번호를 선택하세요.\n");
+//		printf("1.로그인 2.회원가입 3.옵션 4.만든사람들\n");
+//		scanf("%d", &select);		
+//		if (select == 1) { printf("로그인하세요.\n"); }
+//		if (select == 2) { printf("회원가입하세요.\n"); }
+//		if (select == 3) { printf("옵션 세팅\n"); }
+//		if (select == 4) { printf("목록보기\n"); }
+//	}while(select <= 4 && select >= 1);
+//	printf("종료합니다.\n");
+//}
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include <time.h>
+//
+//int main()
+//{
+//	srand((unsigned int)time(NULL));
+//	int command;
+//	int day = 0;
+//	int study = 0;
+//	int mung = 0;
+//	int youtube = 0;
+//
+//	do {
+//		printf("\n%d번째 날! \n", ++day);
+//		printf("오늘도 코딩할까요?\n");
+//		printf("1.공부한다.\n");
+//		printf("2.멍때린다.\n");
+//		printf("3.공부하는 척하면서 몰래 유튜브 본다.\n");
+//		printf("그 외. 끝낸다.\n>>");
+//		scanf("%d", &command);
+//
+//		//if (command != 1) break;
+//		if (command == 1) {
+//			int randInt = rand() % 5 + 1;
+//
+//			switch (randInt) {
+//			case 1:
+//				printf("기분이 좋네요.\n");
+//			case 3:
+//				printf("도서관에서. ");
+//				break;
+//			case 2:
+//				printf("기분이 나빠요. \n");
+//			case 4:
+//				printf("카페에서 ");
+//				break;
+//			case 5:
+//				printf("학원에서 ");
+//				break;
+//			}
+//			printf("코딩 공부합니다.\n");
+//			study++;
+//		}
+//
+//		else if (command == 2) {
+//			int randInt = rand() % 5 + 1;
+//			switch (randInt) {
+//			case 1:
+//				printf("기분이 좋지도 나쁘지도 않아요.\n");
+//			case 3:
+//				printf("길거리에서. ");
+//				break;
+//			case 2:
+//				printf("기분이 멍해요. \n");
+//			case 4:
+//				printf("차 안에서 ");
+//				break;
+//			case 5:
+//				printf("학교에서 ");
+//				break;
+//			}
+//			printf("멍때립니다.\n");
+//			mung++;
+//		}
+//		else if (command == 3) {
+//			int randInt = rand() % 5 + 1;
+//			switch (randInt) {
+//			case 1:
+//				printf("딴짓하고 싶은 기분이에요.\n");
+//			case 3:
+//				printf("직장에서. ");
+//				break;
+//			case 2:
+//				printf("유튜브를 보고 싶은 기분이에요. \n");
+//			case 4:
+//				printf("집에서 ");
+//				break;
+//			case 5:
+//				printf("스터디카페에서 ");
+//				break;
+//			}
+//			printf("공부하는 척하면서 몰래 유튜브를 봅니다.\n");
+//			youtube++;
+//		}
+//		else break;
+//	} while (1);
+//
+//	if (day <= 3) {
+//		printf("그대로입니다...\n");
+//	}
+//	else if (study > mung && study > youtube) {
+//		int level = study / 8;
+//		switch (level) {
+//		case 0:
+//			printf("코딩 새싹이 되었습니다!\n");
+//			break;
+//		case 1:
+//			printf("프로그래머가 되었습니다!\n");
+//			break;
+//		case 2:
+//			printf("FrontEnd 개발자가 되었습니다!\n");
+//			break;
+//		case 3:
+//			printf("BackEnd 개발자가 되었습니다!\n");
+//			break;
+//		default:
+//			printf("풀스택 개발자가 되었습니다!\n");
+//			break;
+//		}
+//	}
+//	else if (mung > study && mung > youtube) {
+//		int level = mung / 4;
+//		switch (level) {
+//		case 0:
+//			printf("멍때리기 대회 우승자가 되었습니다!\n");
+//			break;
+//		case 1:
+//			printf("너무 멍때려서 멍멍이로 오인받게 되었습니다!\n");
+//			break;
+//		default:
+//			printf("그냥 멍때리는 사람이 되었습니다!\n");
+//			break;
+//		}
+//	}
+//	else if (youtube > study && youtube > mung) {
+//		int level = youtube / 4;
+//		switch (level) {
+//		case 0:
+//			printf("딴짓하기 달인이 되었습니다!\n");
+//			break;
+//		case 1:
+//			printf("유튜버가 되었습니다! 순식간에 구독자가 늘어나 실버 버튼을 받게 되었습니다!\n");
+//			break;
+//		default:
+//			printf("그냥 유튜브 보는 사람이 되었습니다!\n");
+//			break;
+//		}
+//	}
+//	return 0;
+//
+//}
+
+//#include <stdio.h>
+//int main() {
+//	int sheep;
+//	for (sheep = 1; sheep < 5; sheep++) {
+//		printf("양 %d마리\n", sheep);
+//	}
+//	printf("잠들었다!\n");
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main() {
+//	int sheep;
+//	for (sheep = 1; sheep < 5; sheep++)
+//	{
+//		printf("양 %d마리\n",sheep);
+//		if (sheep == 3) {
+//			printf("도중에 잠들었다! \n");
+//			break;
+//		}
+//	}return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int sheep;
+//	for (sheep = 1; sheep <= 5; sheep++) {
+//		if(sheep==3){
+//		printf("졸아서 양을 세지 못했다! \n");
+//		continue;
+//	}
+//	printf("양%d마리\n", sheep);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main() {
+//	int sheep;
+//	for (sheep = 1; sheep <= 20; sheep++) {
+//		printf("양 %d마리\n", sheep);
+//	}
+//	printf("잠들었다!\n");
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int sheep;
+//	for (sheep = 1; sheep <= 50; sheep++) {
+//		if (sheep % 10 == 0) {
+//			printf("깜빡 졸았다! \n");
+//		}
+//		if (sheep == 45) { 
+//			printf("잠들었다!");	break;
+//		}
+//		printf("양%d마리\n", sheep);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int round;
+//	for (round = 0; round < 10; round++)
+//	{
+//		printf("라운드%d\n", round);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main() {
+//	int round;
+//	for (round = 1; round <= 10; round++)
+//	{
+//		printf("라운드%d\n", round);
+//	}return 0;
+//}
+
+//#include <stdio.h>
+//int main() {
+//	int count;
+//	for (count = 101; count < 111; count++)
+//	{
+//		printf("아파트%d동\n", count);
+//	}return 0;
+//}
+
+//#include <stdio.h>
+//int main() {
+//	int number;
+//	int sum_number = 0;
+//	for (number = 1; number <= 20; number++)
+//	{
+//		sum_number = sum_number + number;
+//	}
+//	printf("도합%d\n", sum_number);
+//return 0;
+//}
+
+//#include <stdio.h>
+//int main() {
+//	int count;
+//	int number;
+//	printf("반복할 횟수를 입력하세요 : ");
+//	scanf("%d", &count);
+//	for (number = 0; number < count; number++)
+//	{
+//		printf("삐약");
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main() {
+//	int number;
+//	for (number = 10; number <= 99; number++)
+//	{
+//		printf("%d\n", number);
+//	}return 0;
+//}
+
+//#include <stdio.h>
+//int main() {
+//	int number;
+//	int multiple = 1;
+//	for (number = 3; number <= 8; number++)
+//	{
+//		multiple = number * multiple;		
+//	}printf("%d\n", multiple); 
+//	return 0;
+//}
+
 #include <stdio.h>
 int main() {
-	int number = 0, total = 0, player = 0;
-	printf("1~3 중 숫자 하나를 입력하세요\n");
-	while (1) {
-		printf("A : ");
-		scanf("%d", &number);
+	for (int number = 1; number <= 50; number++)
+	{
+		int num1 = number % 10;
+		int num10 = number / 10;
 
-		total = number + total;
-		printf("=> %d\n", total);
+		num1 ==
+		num10 == 
 
-		/*printf("B : ");
-		scanf("%d", number);
-		printf("=> %d\n", total);*/
+		printf("%d%d\n", num10,num1);
 
-		if (total >= 31) { printf("A가 졌습니다!"); break; }
+	
 	}
-
 	return 0;
 }
