@@ -1539,19 +1539,278 @@
 //	return 0;
 //}
 
+//#include <stdio.h>
+//int main() {
+//	for (int number = 1; number <= 50; number++)
+//	{
+//		int num1 = number % 10;
+//		int num10 = number / 10;
+//
+//		//if((num1&& num1%3 == 0)|| (num10 && num10 % 3 == 0))
+//		if (num1 == 3 || num1 == 6 || num1 == 9|| num10 ==3 || num10==6 || num10 ==9)
+//			printf("%d\n", number);
+//
+//	
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main() {
+//	int number;
+//	printf("100이하의 제곱수를 출력합니다.\n");
+//
+//	for (number = 1; (number * number) <= 100; number++)
+//	{
+//		printf("%d\n", number * number);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int num;
+//	printf("100이하 7의 배수를 출력합니다.\n");
+//
+//	for (num = 7; num <= 100; num += 7)
+//	{
+//		printf("%d\n", num);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	char input;
+//	for (; ; )
+//	{
+//		scanf(" %c", &input);
+//		switch (input)
+//		{
+//		case's':
+//			printf("START GAME\n");
+//			break;
+//		case 'e':
+//			printf("EXIT GAME\n");
+//			return 0;
+//		}
+//	}return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int exitFor, number;
+//	printf("1부터 10까지 곱한 수 출력 : ");
+//	for (number = 10, exitFor = number-1;
+//		exitFor;
+//		number *= exitFor, exitFor--)
+//	{
+//	}
+//	printf("%d\n", number);
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main() {
+//	printf("1부터 10까지 곱한 수 출력 : ");
+//	for(int number=10, exitFor=number-1;
+//		exitFor;
+//		number*=exitFor,exitFor--)
+//	{
+//		printf("%d\n", number);
+//	}
+//	
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int count;
+//	for (count = 0; count < 5; count++)
+//	{
+//		printf("%d\n", count);
+//	}
+//	return 0;
+//}
+
+
+//#include <stdio.h>
+//int main()
+//{
+//	int num;	
+//	for (num = 11; num <= 200; num += 11) {
+//		//printf("%d", num);
+//		//if (num > 200) break;
+//		//printf(",");
+//		printf("%d,", num);
+//	}
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	float sqLine;
+//	for(sqLine=0.1; sqLine*4<=21; sqLine+=0.1)
+//	{ 
+//		printf("%.1f\n", sqLine);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	printf("1반 1번\n");
+//	printf("1반 2번\n");
+//	printf("1반 3번\n");
+//	printf("2반 1번\n");
+//	printf("2반 2번\n");
+//	printf("2반 3번\n");
+//
+//	return 0;
+//}
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//	int myClass = 1;
+//	int student = 1;
+//	printf("%d반 %d번\n", myClass, student); student++;
+//	printf("%d반 %d번\n", myClass, student); student++;
+//	printf("%d반 %d번\n", myClass, student); student++;
+//
+//	myClass++; student = 1;
+//	printf("%d반 %d번\n", myClass, student); student++;
+//	printf("%d반 %d번\n", myClass, student); student++;
+//	printf("%d반 %d번\n", myClass, student); student++;
+//
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int myClass = 1;
+//	int student;
+//	for (student = 1; student <= 3; student++) {
+//		printf("%d반 %d번\n", myClass, student);
+//	}
+//
+//	myClass++;
+//	for (student = 1; student <= 3; student++) {
+//		printf("%d반 %d번 \n", myClass, student);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main() {
+//	int myClass;
+//	int student;
+//	for (myClass = 1; myClass <= 2; myClass++) {
+//		for (student = 1; student <= 3; student++) {
+//			printf("%d반 %d번 \n", myClass,student);
+//		}
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int myClass;
+//	int student;
+//	for (myClass = 1; myClass <= 8; myClass++) {
+//		for (student = 1; student <= 30; student++) {
+//			printf("%d반 %d번\n", myClass, student);
+//		}
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int grade;
+//	int myClass;
+//	int student;
+//
+//	for (grade = 1; grade <= 8; grade++)
+//	{
+//		for (myClass = 1; myClass <= 8; myClass++)
+//		{
+//			for (student = 1; student <= 30; student++)
+//			{
+//				printf("%d학년 %d반 %d번\n", grade, myClass, student);
+//			}
+//		}
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{	
+//	int dan;
+//	int num;
+//	for(dan=2;dan<=9;dan++)
+//	{
+//		for (num = 1; num <= 9; num++) {
+//			printf("%d X %d = %d\t", dan, num, dan * num);
+//			if (num == 9)
+//			{
+//				printf("\n");
+//			}
+//		}
+//	}
+//	return 0;
+//}
+
 #include <stdio.h>
-int main() {
-	for (int number = 1; number <= 50; number++)
+int main()
+{
+	//dan,num 변수 바뀜 / break 말고 continue쓰기
+	int num;
+	int dan;
+
+
+	for (num = 1; num <= 9; num++)
 	{
-		int num1 = number % 10;
-		int num10 = number / 10;
-
-		num1 ==
-		num10 == 
-
-		printf("%d%d\n", num10,num1);
-
-	
+		for (dan = 1; dan <= 9; dan++) {
+			printf("%d X %d = %d\t", num, dan, num * dan);
+				 
+			if (dan == 9)
+			{
+				printf("\n");
+			}
+		}
 	}
 	return 0;
 }
+
+
+
+
+//#include <stdio.h>
+//int main()
+//{
+//	int F;
+//	int S;
+//
+//	for (F = 1; F <= 4; F++) {
+//		for (S = 1; S <= 6; S++)
+//		{
+//			printf("4면 - %d, 6면 - %d\n", F, S);
+//			if (S == 6)
+//			{
+//				printf("\n");
+//			}
+//		}
+//	}
+//	return 0;
+//}
