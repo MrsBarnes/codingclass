@@ -1961,57 +1961,100 @@
 //	return 0;
 //}
 
+//#include <stdio.h>
+//int main()
+//{
+//	int LINE = 3;
+//	scanf("%d", &LINE);
+//	int B = 1;
+//
+//	for (int A = LINE - 1; A >= 0; A--) {
+//		for (int i = 1; i <= A; i++) {
+//			printf(" ");
+//		}
+//
+//		for (int x = 1; x <= B; x++) {
+//			printf("*");
+//		}
+//		B += 2;
+//		printf("\n");
+//	}
+//
+//	B -= 2;
+//	for (int A = 0; A < LINE; A += 1) {
+//		for (int x = 1; x <= A; x++) {
+//			printf(" ");
+//		}
+//		for (int i = 1; i <= B; i++) {
+//			printf("*");
+//		}printf("\n");
+//		B -= 2;
+//	}
+//
+//
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main() {
+//	int LINE = 3;
+//	int B = 1;
+//	int C = 1;
+//	scanf("%d", &LINE);
+//
+//	for (int A = LINE-1; A>=0; A -= 1) {
+//		for (int x = 1; x <= A; x++) {
+//			printf(" ");
+//		}
+//		for (int y = 1; y <= B; y++) {
+//			printf("%d", C);
+//		}
+//		B += 1;
+//		C += 1;d1
+//		printf("\n");
+//	}
+//
+//}
+
 #include <stdio.h>
-int main()
-{
-	int A = 2;
-	int B = 1;
+int main() {
+	int A;
+	int B;
+	printf("<배스킨 라빈스 31!> \n");
+	printf("31을 말하는 사람이 지게 됩니다. \n\n");
+	printf("게임을 시작합니다! : 뒤에 숫자를 입력해주세요. \n");
 
-	//for (int x = 1; x <= 2; x++) {
-	//	printf(" ");
-	//}
-	//for (int i = 1; i <= 1; i++) {
-	//	printf("*");
-	//}
-	//printf("\n");
+	printf("A :");
+	scanf("%d", &A);
+	printf("A :");
+	scanf("%d", &A);
+	printf("A :");
+	scanf("%d", &A);
+	printf("턴이 넘어갑니다. \n");
 
-	//for (int x = 1; x <= 1; x++) {
-	//	printf(" ");
-	//}
-	//for (int i = 1; i <= 3; i++) {
-	//	printf("*");
-	//}
-	//printf("\n");
+	printf("B :");
+	scanf("%d", &B);
+	printf("B :");
+	scanf("%d", &B);
+	printf("B :");
+	scanf("%d", &B);
+	printf("턴이 넘어갑니다. \n");
 
-	//for (int x = 1; x <= 0; x++) {
-	//	printf(" ");
-	//}
-	//for (int i = 1; i <= 5; i++) {
-	//	printf("*");
-	//}
-	//printf("\n");
+	printf("A :");
+	scanf("%d", &A);
+	printf("A :");
+	scanf("%d", &A);
+	printf("A :");
+	scanf("%d", &A);
+	printf("턴이 넘어갑니다. \n");
 
-	//for (int x = 1; x <= 0; x++) {
-	//	printf(" ");
-	//}
-	//for (int i = 1; i <= 5; i++) {
-	//	printf("*");
-	//}
-	//printf("\n");
 
-	//for (int x = 1; x <= 1; x++) {
-	//	printf(" ");
-	//}
-	//for (int i = 1; i <= 3; i++) {
-	//	printf("*");
-	//}
-	//printf("\n");
+	//여기부터
+	if (A == 31) {
+		printf("유저 B의 승리입니다!\n");
+	}
 
-	//for (int x = 1; x <= 2; x++) {
-	//	printf(" ");
-	//}
-	//for (int i = 1; i <= 1; i++) {
-	//	printf("*");
-	//}
-	return 0;
+	else if (B == 31) {
+		printf("유저 A의 승리입니다!\n")
+	}
 }
