@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나 오늘 김밥먹음</title>
+    <style>
+         body{
+            margin:0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family:"Segoe UI", "Noto Sans KR", sans-serif;
+            background: #f7f8fb;
+            color:#1b1f23;
+        }
+        .practice{
+            width:min(680px, clac(100% - 32px));
+            padding: 24px;
+            border: 1px solid #d8de99;
+            border-radius: 12px;
+            background:white;
+        }
+        button, input {font:inherit}
+        .img-box{
+            width:100%;
+            min-height: 120px;
+            display: grid;
+            place-items: center;
+            margin-bottom:18px;
+            border-radius: 12px;
+            background: linear-gradient(135deg,#dbeafe,#fce7f3);
+            color: 475569;
+        } 
+        label{
+            display:block ;
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+        input{
+            width: 100%;
+            padding:10px;
+            border:1px solid #cbd5e1;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <main class="practice"> 
+        <object data="cat.jpg" type="img/jpeg" class="img-box" aria-lagbel="잠자는고양이.">
+            <img src="cat.jpg" alt="고양이사진을꼭넣고싶엇어요"> 잠자는고양이.
+        </object>
+
+        <label for="input">이름</label>
+        <input type="text" id="name" placeholder="이름 입력">
+    </main>
+    <script>
+        const nameInput = document.getElementById('name');
+        nameInput.addEventListener('keydown',function(event){
+            if(event.key == 'Enter'  && nameInput.value.trim()!=''){
+                alert('고양이 이름: ' + nameInput.value);
+            }
+        });
+    </script>
+</body>
+</html>
